@@ -2,6 +2,7 @@ body {
   height: 500vh;
   margin: 0;
   background-color: hsl(32, 88%, 54%);
+  margin: 0em 3em;
 }
 
 .svg-container {
@@ -20,6 +21,13 @@ svg {
   stroke: white;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    height: 200vh;
+  }
+
+  svg {height: 40%;}
+}
 /* section {
   height: 100vh;
   display: grid;
