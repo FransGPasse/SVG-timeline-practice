@@ -12,12 +12,11 @@ window.addEventListener("scroll", () => {
     (document.documentElement.scrollHeight -
       document.documentElement.clientHeight);
 
-  // Length to offset the dashes
-  var drawLength = pathLength * scrollPercentage;
+  // Length to offset the dashes (added minus before scrollPercentage beacuase I accidentally reversed the path in the SVG and there was no easy way of changing it back)
+  var drawLength = pathLength * -scrollPercentage;
 
   //Draw in reverse
   path.style.strokeDashoffset = pathLength - drawLength;
-
 
   //Potential parallax effects but didn't work
   const target = document.querySelectorAll(".scroll");
