@@ -1,8 +1,9 @@
 body {
   height: 500vh;
   margin: 0;
-  background-color: hsl(32, 88%, 54%);
-  margin: 0em 3em;
+  background-color: hsl(249, 89%, 19%);
+  display: grid;
+  place-items: center;
 }
 
 .svg-container {
@@ -19,15 +20,23 @@ svg {
   display: inline-block;
   height: 100%;
   stroke: white;
+  stroke-width: 2;
 }
 
-@media screen and (max-width: 375px) {
-  body {
-    height: 200vh;
+@media screen and (min-width: 768px) {
+  .svg-container {
+    top: -30vh;
+    height: 150%;
   }
-
-  svg {height: 40%;}
 }
+
+@media screen and (min-width: 1200px) {
+  .svg-container {
+    top: -35vh;
+    height: 165%;
+  }
+}
+
 /* section {
   height: 100vh;
   display: grid;
