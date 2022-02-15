@@ -1,4 +1,4 @@
 # SVG-timeline-practice
 
 ## Live version
-Hosted [here](https://svg-timeline-practice.netlify.app/) through Netlify.
+Live version hosted [here](https://svg-timeline-practice.netlify.app/) through Netlify.
